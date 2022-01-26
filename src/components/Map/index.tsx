@@ -15,7 +15,7 @@ const MapContainer = () => {
 
   return (
     <S.Wrapper ref={ref}>
-      <S.Title>Veja os pontos importantes de Florianópolis pelo mapa</S.Title>
+      <S.Title>Veja os pontos importantes de Pelotas pelo mapa</S.Title>
       {inView && <Map />}
     </S.Wrapper>
   )
