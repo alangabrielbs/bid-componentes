@@ -23,9 +23,9 @@ type DataProps = {
 
 const data = [] as DataProps[]
 
-for (let num = 0; num <= 15; num++) {
+for (let num = 0; num <= 20; num++) {
   data.push({
-    date: subDays(new Date('01-31-2022'), num).toISOString().substr(0, 10),
+    date: subDays(new Date('03-30-2022'), num).toISOString().substr(0, 10),
     janeiro: Math.floor(Math.random() * num * 2),
     fevereiro: Math.floor(Math.random() * num * 4)
   })
