@@ -11,8 +11,8 @@ export const Title = styled.h3`
   max-width: 440px;
 
   position: absolute;
-  top: 80%;
-  transform: translateY(-80%);
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1000;
   margin-left: 140px;
 
