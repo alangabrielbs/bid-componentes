@@ -2,14 +2,14 @@ import {
   ResponsiveContainer,
   AreaChart,
   YAxis,
-  Area,
-  Tooltip,
-  TooltipProps
+  Area
+  // Tooltip,
+  // TooltipProps
 } from 'recharts'
-import {
-  ValueType,
-  NameType
-} from 'recharts/src/component/DefaultTooltipContent'
+// import {
+//   ValueType,
+//   NameType
+// } from 'recharts/src/component/DefaultTooltipContent'
 
 import { subDays } from 'date-fns'
 
@@ -67,7 +67,7 @@ const Chart = () => {
             dot={(props) => <S.Dot {...props} />}
           />
 
-          <Tooltip content={<CustomTooltip />} />
+          {/* <Tooltip content={<CustomTooltip />} /> */}
 
           <YAxis axisLine={false} tickLine={false} tickCount={5} />
         </AreaChart>
@@ -76,23 +76,23 @@ const Chart = () => {
   )
 }
 
-const CustomTooltip = ({
-  active,
-  payload
-}: TooltipProps<ValueType, NameType>) => {
-  if (active && payload && payload.length) {
-    return (
-      <S.WrapperTooltip>
-        {payload.map((item) => (
-          <S.TooltipItem key={item.name} color={item.color}>
-            <span>{item.name}</span>: {item.value}
-          </S.TooltipItem>
-        ))}
-      </S.WrapperTooltip>
-    )
-  }
+// const CustomTooltip = ({
+//   active,
+//   payload
+// }: TooltipProps<ValueType, NameType>) => {
+//   if (active && payload && payload.length) {
+//     return (
+//       <S.WrapperTooltip>
+//         {payload.map((item) => (
+//           <S.TooltipItem key={item.name} color={item.color}>
+//             <span>{item.name}</span>: {item.value}
+//           </S.TooltipItem>
+//         ))}
+//       </S.WrapperTooltip>
+//     )
+//   }
 
-  return null
-}
+//   return null
+// }
 
 export default Chart
