@@ -1,19 +1,29 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Title = styled.h3`
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  line-height: 48px;
+
   color: #36373a;
   max-width: 440px;
 
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 80%;
+  transform: translateY(-80%);
   z-index: 1000;
   margin-left: 140px;
+
+  ${media.lessThan('medium')`
+    font-size: 24px;
+    max-width: 90%;
+    margin-left: 20px;
+    bottom: 20px;
+    top: initial;
+    transform: translateY(0);
+  `}
 `
 
 export const Wrapper = styled.div`
