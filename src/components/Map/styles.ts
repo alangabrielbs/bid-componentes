@@ -280,7 +280,8 @@ export const Wrapper = styled.div`
 
   .leaflet-interactive {
     cursor: pointer;
-    filter: drop-shadow(-1px 2px 6px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    stroke-width: 1px;
   }
   .leaflet-grab {
     cursor: -webkit-grab;
