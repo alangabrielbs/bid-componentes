@@ -11,25 +11,9 @@ import {
 //   NameType
 // } from 'recharts/src/component/DefaultTooltipContent'
 
-import { subDays } from 'date-fns'
-
 import * as S from './styles'
 
-type DataProps = {
-  date: string
-  janeiro: number
-  fevereiro: number
-}
-
-const data = [] as DataProps[]
-
-for (let num = 0; num <= 20; num++) {
-  data.push({
-    date: subDays(new Date('03-30-2022'), num).toISOString().substr(0, 10),
-    janeiro: Math.floor(Math.random() * num * 2),
-    fevereiro: Math.floor(Math.random() * num * 4)
-  })
-}
+import data from './mock'
 
 const Chart = () => {
   return (
