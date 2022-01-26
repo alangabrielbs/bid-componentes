@@ -9,8 +9,6 @@ export const Title = styled.h3`
   color: #36373a;
 
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   z-index: 1000;
 
   font-size: 24px;
@@ -19,6 +17,8 @@ export const Title = styled.h3`
   bottom: 20px;
 
   ${media.greaterThan('medium')`
+    top: 50%;
+    transform: translateY(-50%);
     max-width: 520px;
     margin-left: 140px;
     font-size: 40px;
