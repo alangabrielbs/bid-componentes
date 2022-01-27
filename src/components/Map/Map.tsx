@@ -66,12 +66,10 @@ const Map = () => {
           center={position}
           radius={radius}
           pathOptions={{
-            stroke: true,
             fillColor: '#329DFF',
             fillOpacity: 1,
             color: '#fff',
-            opacity: 0.6,
-            className: 'circle'
+            opacity: 0.6
           }}
         />
       ))}
